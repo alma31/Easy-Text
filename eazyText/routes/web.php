@@ -11,7 +11,5 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
 Route::get('/home', 'EazyTextController@showApp');
+Route::get('/home', 'EazyTextController@useFaker');
