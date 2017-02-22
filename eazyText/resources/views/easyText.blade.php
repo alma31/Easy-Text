@@ -44,11 +44,13 @@
 						</div>
 						<div>
 						</div>
-					</form>
 							<button id="btn" class="btn btn-default" type="submit">Générer</button>
 				</div>
+					</form>
 				<div class="col-md-8">
-					<textarea class="form-control" rows="14"></textarea>
+				@foreach :
+					<textarea class="form-control" rows="14" id="textarea">{{$faker->word}}</textarea>
+				@endforeach
 				</div>
 			</div>
 		</div>
