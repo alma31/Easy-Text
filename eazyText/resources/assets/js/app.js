@@ -5,7 +5,6 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap');
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -17,21 +16,13 @@ require('./bootstrap');
  	var app = {
 
  		init : function(){
- 			app.hideMenu();
-
- 			// app.popUp();
+ 			app.listener();
  		},
 
- 		hideMenu : function(){
- 			$(window).scroll(function (){
- 				var carous = $('#menu');
- 				if ($(this).scrollTop() > 700 ) {
- 					carous.hide();
- 					
- 				}else{
- 					carous.show();
- 				};
- 			});
+ 		listener : function(){
+ 			$('#btn').on('click', function(){
+ 				console.log('teste');
+ 			})
  		},
  		
 

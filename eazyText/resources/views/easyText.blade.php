@@ -43,9 +43,9 @@
 							<input type="number" class="form-control" id="inputNbr" placeholder="">
 						</div>
 						<div>
-							<button class="btn btn-default" type="submit">Générer</button>
 						</div>
 					</form>
+							<button id="btn" class="btn btn-default" type="submit">Générer</button>
 				</div>
 				<div class="col-md-8">
 					<textarea class="form-control" rows="14"></textarea>
