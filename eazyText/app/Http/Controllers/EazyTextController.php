@@ -19,4 +19,7 @@ class EazyTextController extends Controller
 		$faker = Faker\Factory::create();
 		return view ('easyText', ['faker' => $faker]);
 	}
+	public function postForm(){
+		return view('easyText');
+	}
 }

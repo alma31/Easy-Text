@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="csrf-token" content="{{ csrf_token() }}">
 	<title>Easy Text</title>
 	<link rel="stylesheet" href="{{mix('/css/app.css')}}">
 </head>
@@ -15,6 +16,7 @@
 			<div class="col-md-4">
 				<h2>Texte à générer : </h2>
 				<form method="POST" action="/home">
+				{{ csrf_field() }}
 					<div class="form-group">
 						<div class="radio">
 							<label>
