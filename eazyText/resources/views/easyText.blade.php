@@ -48,10 +48,12 @@
 					</form>
 				</div>
 				<div class="col-md-8">
+
 			
 					<textarea class="form-control" rows="14" id="textarea">{{$faker}}</textarea>
 					
 					<div></div>
+
 				</div>
 			</div>
 		</div>

@@ -14,7 +14,7 @@ class FakeLoremSeeder extends Seeder
     {
         $faker = Faker::create('App\EazyText');
         DB::table('texte')->insert([
-        	'texte' => implode($faker->paragraphs(50))
+        	'texte' => implode($faker->paragraphs())
         ]);
     }
 }
