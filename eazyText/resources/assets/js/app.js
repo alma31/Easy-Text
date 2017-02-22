@@ -12,4 +12,31 @@ require('./bootstrap');
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
+(function(){
+ 	"use strict";
+ 	var app = {
 
+ 		init : function(){
+ 			app.hideMenu();
+
+ 			// app.popUp();
+ 		},
+
+ 		hideMenu : function(){
+ 			$(window).scroll(function (){
+ 				var carous = $('#menu');
+ 				if ($(this).scrollTop() > 700 ) {
+ 					carous.hide();
+ 					
+ 				}else{
+ 					carous.show();
+ 				};
+ 			});
+ 		},
+ 		
+
+ 	};
+ 	$(document).ready(function(){
+ 		app.init();
+ 	});
+ })();
