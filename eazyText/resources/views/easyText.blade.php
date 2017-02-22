@@ -20,19 +20,19 @@
 					<div class="form-group">
 						<div class="radio">
 							<label>
-								<input type="radio" name="optionsRadios1" id="radio1" value="option1" checked>
+								<input type="radio" name="optionsRadios" id="radio1" value="option1" >
 								Mots
 							</label>
 						</div>
 						<div class="radio">
 							<label>
-								<input type="radio" name="optionsRadios2" id="radio2" value="option2">
+								<input type="radio" name="optionsRadios" id="radio2" value="option2">
 								Paragraphes
 							</label>
 						</div>
 						<div class="radio">
 							<label>
-								<input type="radio" name="optionsRadios3" id="radio3" value="option3">
+								<input type="radio" name="optionsRadios" id="radio3" value="option3">
 								Listes
 							</label>
 						</div>
@@ -50,9 +50,9 @@
 				<div class="col-md-8">
 
 			
-					<textarea class="form-control" rows="14" id="textarea">{{$faker}}</textarea>
+					<textarea class="form-control" rows="14" id="textarea">{{$faker->text}}</textarea>
 					
-					<div></div>
+					<div>{{$input}}</div>
 
 				</div>
 			</div>

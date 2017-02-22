@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/home', 'EazyTextController@showApp');
-Route::get('/home', 'EazyTextController@useFaker');
+Route::get('/', 'EazyTextController@showApp');
+Route::get('/', 'EazyTextController@useFaker');
 Route::post('/home', 'EazyTextController@postForm');
