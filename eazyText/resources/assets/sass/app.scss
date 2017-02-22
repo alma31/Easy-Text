@@ -7,6 +7,16 @@
 
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+body{
+	background-color:grey;
+	color:white;
+}
 
-
+.ligneTitle{
+	background-color:white;
+	height:2em;
+}
+div{
+	padding:0.5em;
+}
 
