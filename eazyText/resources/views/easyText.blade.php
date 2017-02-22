@@ -20,7 +20,7 @@
 					<div class="form-group">
 						<div class="radio">
 							<label>
-								<input type="radio" name="optionsRadios1" id="radio1" value="option1">
+								<input type="radio" name="optionsRadios1" id="radio1" value="option1" checked>
 								Mots
 							</label>
 						</div>
@@ -40,7 +40,7 @@
 					<div>
 						<label for="inputNbr">
 							[nom] à générer de fois</label>
-							<input type="number" class="form-control" id="inputNbr" placeholder="">
+							<input type="number" class="form-control" id="inputNbr" name="inputNbr" placeholder="">
 						</div>
 						<div>
 						</div>
@@ -49,8 +49,8 @@
 				</div>
 				<div class="col-md-8">
 			
-					<textarea class="form-control" rows="14" id="textarea">{{$faker->word}}</textarea>
-					
+					<textarea class="form-control" rows="14" id="textarea">{{$word}}</textarea>
+					<div></div>
 				</div>
 			</div>
 		</div>
