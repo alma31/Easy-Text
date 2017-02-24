@@ -32,7 +32,7 @@
 						</div>
 						<div class="radio">
 							<label>
-								<input type="radio" name="optionsRadios" id="radio3" value= "">
+								<input type="radio" name="optionsRadios" id="radio3" value=  "{{$faker->word}}">
 								Listes
 							</label>
 						</div>
@@ -49,10 +49,9 @@
 				</div>
 				
 				<div class="col-md-8">
-
-					<textarea class="form-control" rows="14" id="textarea">{{$faker->word}}</textarea>
-					
+					<textarea class="form-control" rows="14" id="textarea">{{$inputRadio}}</textarea>
 				</div>
+				<div>{{$inputNbr}} </div>
 			</div>
 		</div>
 
