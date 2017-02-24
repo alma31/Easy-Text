@@ -16,7 +16,7 @@
 			<div class="col-md-4">
 				<h2>Texte à générer : </h2>
 
-				<form method="POST" action="/home">
+				<form method="GET" action="/home">
 					{{ csrf_field() }}
 					<div class="form-group">
 						<div class="radio">
@@ -33,7 +33,7 @@
 						</div>
 						<div class="radio">
 							<label>
-								<input type="radio" name="optionsRadios" id="radio3" value= "">
+								<input type="radio" name="optionsRadios" id="radio3" value=  "{{$faker->word}}">
 								Listes
 							</label>
 						</div>
@@ -50,11 +50,11 @@
 				</div>
 				
 				<div class="col-md-8">
-					<textarea class="form-control" rows="14" id="textarea">{{$faker->word}}</textarea>
+					<textarea class="form-control" rows="14" id="textarea">{{$inputRadio}}</textarea>
 
-					<div>{{$radio}}</div>
-					<div>{{$input}}</div>
+					
 				</div>
+				<div>{{$inputNbr}} </div>
 			</div>
 		</div>
 

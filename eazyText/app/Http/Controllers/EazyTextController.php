@@ -15,17 +15,14 @@ class EazyTextController extends Controller
 		
 	}
 
-	public function postForm($nbWords = 10){
+	public function getForm(Request $request){
 		$faker = Faker\Factory::create();
-		$input = $_POST['inputNbr'];
-		$radio = $_POST['optionsRadios'];
-		$valid = $_POST['valid'];
-		
-			if (isset($input) && isset($radio) && isset($valid)){
-				return view ('easyText', ['faker' => $faker,'input' => $input, 'radio' => $radio ]);
-			
-			}elseif (empty($input && isset($radio) && isset($valid))) {
-			return alert('Champs vide');
-		}
+		// $this->validate($request, [
+		// 	'optionsRadios' => 'in:1,2,3'
+		// 	]);
+		$inputRadio = $request->input('optionsRadios');
+		$inputNbr = $request->input('inputNbr');
+		return view('easyText', ['faker'=> $faker, 'inputRadio'=>$inputRadio, 'inputNbr'=>$inputNbr]);
+
 	}
 }
