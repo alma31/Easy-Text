@@ -20,19 +20,19 @@
 					<div class="form-group">
 						<div class="radio">
 							<label>
-								<input type="radio" name="optionsRadios" id="radio1" value="option1">
+								<input type="radio" name="optionsRadios" id="radio1" value="{{$faker->word}}">
 								Mots
 							</label>
 						</div>
 						<div class="radio">
 							<label>
-								<input type="radio" name="optionsRadios" id="radio2" value="option2">
+								<input type="radio" name="optionsRadios" id="radio2" value="{{$faker->paragraph}}">
 								Paragraphes
 							</label>
 						</div>
 						<div class="radio">
 							<label>
-								<input type="radio" name="optionsRadios" id="radio3" value="option3">
+								<input type="radio" name="optionsRadios" id="radio3" value= "">
 								Listes
 							</label>
 						</div>
@@ -40,7 +40,7 @@
 					<div>
 						<label for="inputNbr">
 							[nom] à générer de fois</label>
-							<input type="number" class="form-control" id="inputNbr" name="inputNbr" placeholder="">
+							<input type="text" class="form-control" id="inputNbr" name="inputNbr" placeholder="">
 						</div>
 						<div>
 						</div>
@@ -49,7 +49,11 @@
 				</div>
 				
 				<div class="col-md-8">
-					<textarea class="form-control" rows="14" id="textarea">{{$faker->text}}</textarea>
+				
+					<textarea class="form-control" rows="14" id="textarea">{{$faker->word}}</textarea>
+
+					<div>{{$radio}}</div>
+					<div>{{$input}}</div>
 				</div>
 			</div>
 		</div>

@@ -24,6 +24,8 @@ class EazyTextController extends Controller
 			if (isset($input) && isset($radio) && isset($valid)){
 				return view ('easyText', ['faker' => $faker,'input' => $input, 'radio' => $radio ]);
 			
+			}elseif (empty($input && isset($radio) && isset($valid))) {
+			return alert('Champs vide');
 		}
 	}
 }
