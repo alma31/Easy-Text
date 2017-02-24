@@ -15,8 +15,8 @@
 		<div class="row">
 			<div class="col-md-4">
 				<h2>Texte à générer : </h2>
-
 				<form method="GET" action="/home">
+
 					{{ csrf_field() }}
 					<div class="form-group">
 						<div class="radio">
@@ -50,9 +50,8 @@
 				</div>
 				
 				<div class="col-md-8">
-					<textarea class="form-control" rows="14" id="textarea">{{$inputRadio}}</textarea>
 
-					
+					<textarea class="form-control" rows="14" id="textarea">{{$inputRadio}}</textarea>
 				</div>
 				<div>{{$inputNbr}} </div>
 			</div>
