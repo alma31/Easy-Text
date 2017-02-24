@@ -21,14 +21,14 @@ class EazyTextController extends Controller
 		
 	}
 	public function postForm(){
-		$faker = Faker\Factory::create();
-		$radio1 = $_POST['optionsRadios1'];
-		$radio2 = $_POST['optionsRadios1'];
-		$radio3 = $_POST['optionsRadios1'];
+		// $faker = Faker\Factory::create();
+		// $radio1 = $_POST['optionsRadios1'];
+		// $radio2 = $_POST['optionsRadios1'];
+		// $radio3 = $_POST['optionsRadios1'];
 
-		if (isset($_POST['optionsRadios1'])) {
-			return view('easyText',['faker'=> $faker]);
-		}
+		// if (isset($_POST['optionsRadios1'])) {
+		// 	return view('easyText',['faker'=> $faker]);
+		// }
 
 	}
 }
