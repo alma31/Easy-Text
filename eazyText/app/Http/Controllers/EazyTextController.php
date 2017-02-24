@@ -1,20 +1,14 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use App\EazyText;
 require_once '../vendor/fzaninotto/faker/src/autoload.php';
 use Faker;
-
-
-
 class EazyTextController extends Controller
 {
 	public function showApp(){
 		return view('easyText');
 	}
-
 	public function useFaker(){
 		$faker = Faker\Factory::create();
 		return view ('easyText', ['faker' => $faker]);
@@ -25,11 +19,10 @@ class EazyTextController extends Controller
 		$input = $_POST['inputNbr'];
 		$radio = $_POST['optionsRadios'];
 		$valid = $_POST['valid'];
-		for ($i=0; $i < 10; $i++) {
+		
 			if (isset($input) && isset($radio) && isset($valid)){
 				return view ('easyText', ['faker' => $faker,'input' => $input, 'radio' => $radio ]);
-
-			}
+			
 		}
 	}
 }
