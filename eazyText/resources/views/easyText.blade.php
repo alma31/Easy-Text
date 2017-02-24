@@ -15,7 +15,6 @@
 		<div class="row">
 			<div class="col-md-4">
 				<h2>Texte à générer : </h2>
-
 				<form method="POST" action="/home">
 					{{ csrf_field() }}
 					<div class="form-group">
@@ -51,8 +50,6 @@
 				
 				<div class="col-md-8">
 					<textarea class="form-control" rows="14" id="textarea">{{$faker->text}}</textarea>
-					<div>{{$radio}}</div>
-					<div>{{$input}}</div>
 				</div>
 			</div>
 		</div>
