@@ -14,7 +14,7 @@ class EazyTextController extends Controller
 		return view ('easyText', ['faker' => $faker]);
 		
 	}
-	public function postForm($nbWords = 10){
+	public function postForm(){
 		$faker = Faker\Factory::create();
 		$input = $_POST['inputNbr'];
 		$radio = $_POST['optionsRadios'];
@@ -23,6 +23,8 @@ class EazyTextController extends Controller
 			if (isset($input) && isset($radio) && isset($valid)){
 				return view ('easyText', ['faker' => $faker,'input' => $input, 'radio' => $radio ]);
 			
+			}elseif (empty($input && isset($radio) && isset($valid))) {
+			return alert('Champs vide');
 		}
 	}
 }
